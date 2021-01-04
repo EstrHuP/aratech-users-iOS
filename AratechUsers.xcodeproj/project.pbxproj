@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C750F15E25A3DFBE00D5A9CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750F15D25A3DFBE00D5A9CB /* AppDelegate.swift */; };
+		C750F16025A3DFBE00D5A9CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750F15F25A3DFBE00D5A9CB /* SceneDelegate.swift */; };
+		C750F16225A3DFBE00D5A9CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750F16125A3DFBE00D5A9CB /* ViewController.swift */; };
+		C750F16525A3DFBE00D5A9CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C750F16325A3DFBE00D5A9CB /* Main.storyboard */; };
+		C750F16725A3DFC000D5A9CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C750F16625A3DFC000D5A9CB /* Assets.xcassets */; };
+		C750F16A25A3DFC000D5A9CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C750F16825A3DFC000D5A9CB /* LaunchScreen.storyboard */; };
+		C750F17525A3DFC000D5A9CB /* AratechUsersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750F17425A3DFC000D5A9CB /* AratechUsersTests.swift */; };
+		C750F18025A3DFC000D5A9CB /* AratechUsersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750F17F25A3DFC000D5A9CB /* AratechUsersUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C750F17125A3DFC000D5A9CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C750F15225A3DFBE00D5A9CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C750F15925A3DFBE00D5A9CB;
+			remoteInfo = AratechUsers;
+		};
+		C750F17C25A3DFC000D5A9CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C750F15225A3DFBE00D5A9CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C750F15925A3DFBE00D5A9CB;
+			remoteInfo = AratechUsers;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C750F15A25A3DFBE00D5A9CB /* AratechUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AratechUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C750F15D25A3DFBE00D5A9CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C750F15F25A3DFBE00D5A9CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C750F16125A3DFBE00D5A9CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C750F16425A3DFBE00D5A9CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C750F16625A3DFC000D5A9CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C750F16925A3DFC000D5A9CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C750F16B25A3DFC000D5A9CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C750F17025A3DFC000D5A9CB /* AratechUsersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AratechUsersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C750F17425A3DFC000D5A9CB /* AratechUsersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AratechUsersTests.swift; sourceTree = "<group>"; };
+		C750F17625A3DFC000D5A9CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C750F17B25A3DFC000D5A9CB /* AratechUsersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AratechUsersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C750F17F25A3DFC000D5A9CB /* AratechUsersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AratechUsersUITests.swift; sourceTree = "<group>"; };
+		C750F18125A3DFC000D5A9CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C750F15725A3DFBE00D5A9CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C750F16D25A3DFC000D5A9CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C750F17825A3DFC000D5A9CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C750F15125A3DFBE00D5A9CB = {
+			isa = PBXGroup;
+			children = (
+				C750F15C25A3DFBE00D5A9CB /* AratechUsers */,
+				C750F17325A3DFC000D5A9CB /* AratechUsersTests */,
+				C750F17E25A3DFC000D5A9CB /* AratechUsersUITests */,
+				C750F15B25A3DFBE00D5A9CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C750F15B25A3DFBE00D5A9CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C750F15A25A3DFBE00D5A9CB /* AratechUsers.app */,
+				C750F17025A3DFC000D5A9CB /* AratechUsersTests.xctest */,
+				C750F17B25A3DFC000D5A9CB /* AratechUsersUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C750F15C25A3DFBE00D5A9CB /* AratechUsers */ = {
+			isa = PBXGroup;
+			children = (
+				C750F15D25A3DFBE00D5A9CB /* AppDelegate.swift */,
+				C750F15F25A3DFBE00D5A9CB /* SceneDelegate.swift */,
+				C750F16125A3DFBE00D5A9CB /* ViewController.swift */,
+				C750F16325A3DFBE00D5A9CB /* Main.storyboard */,
+				C750F16625A3DFC000D5A9CB /* Assets.xcassets */,
+				C750F16825A3DFC000D5A9CB /* LaunchScreen.storyboard */,
+				C750F16B25A3DFC000D5A9CB /* Info.plist */,
+			);
+			path = AratechUsers;
+			sourceTree = "<group>";
+		};
+		C750F17325A3DFC000D5A9CB /* AratechUsersTests */ = {
+			isa = PBXGroup;
+			children = (
+				C750F17425A3DFC000D5A9CB /* AratechUsersTests.swift */,
+				C750F17625A3DFC000D5A9CB /* Info.plist */,
+			);
+			path = AratechUsersTests;
+			sourceTree = "<group>";
+		};
+		C750F17E25A3DFC000D5A9CB /* AratechUsersUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C750F17F25A3DFC000D5A9CB /* AratechUsersUITests.swift */,
+				C750F18125A3DFC000D5A9CB /* Info.plist */,
+			);
+			path = AratechUsersUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C750F15925A3DFBE00D5A9CB /* AratechUsers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C750F18425A3DFC000D5A9CB /* Build configuration list for PBXNativeTarget "AratechUsers" */;
+			buildPhases = (
+				C750F15625A3DFBE00D5A9CB /* Sources */,
+				C750F15725A3DFBE00D5A9CB /* Frameworks */,
+				C750F15825A3DFBE00D5A9CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AratechUsers;
+			productName = AratechUsers;
+			productReference = C750F15A25A3DFBE00D5A9CB /* AratechUsers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C750F16F25A3DFC000D5A9CB /* AratechUsersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C750F18725A3DFC000D5A9CB /* Build configuration list for PBXNativeTarget "AratechUsersTests" */;
+			buildPhases = (
+				C750F16C25A3DFC000D5A9CB /* Sources */,
+				C750F16D25A3DFC000D5A9CB /* Frameworks */,
+				C750F16E25A3DFC000D5A9CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C750F17225A3DFC000D5A9CB /* PBXTargetDependency */,
+			);
+			name = AratechUsersTests;
+			productName = AratechUsersTests;
+			productReference = C750F17025A3DFC000D5A9CB /* AratechUsersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C750F17A25A3DFC000D5A9CB /* AratechUsersUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C750F18A25A3DFC000D5A9CB /* Build configuration list for PBXNativeTarget "AratechUsersUITests" */;
+			buildPhases = (
+				C750F17725A3DFC000D5A9CB /* Sources */,
+				C750F17825A3DFC000D5A9CB /* Frameworks */,
+				C750F17925A3DFC000D5A9CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C750F17D25A3DFC000D5A9CB /* PBXTargetDependency */,
+			);
+			name = AratechUsersUITests;
+			productName = AratechUsersUITests;
+			productReference = C750F17B25A3DFC000D5A9CB /* AratechUsersUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C750F15225A3DFBE00D5A9CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					C750F15925A3DFBE00D5A9CB = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					C750F16F25A3DFC000D5A9CB = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = C750F15925A3DFBE00D5A9CB;
+					};
+					C750F17A25A3DFC000D5A9CB = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = C750F15925A3DFBE00D5A9CB;
+					};
+				};
+			};
+			buildConfigurationList = C750F15525A3DFBE00D5A9CB /* Build configuration list for PBXProject "AratechUsers" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C750F15125A3DFBE00D5A9CB;
+			productRefGroup = C750F15B25A3DFBE00D5A9CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C750F15925A3DFBE00D5A9CB /* AratechUsers */,
+				C750F16F25A3DFC000D5A9CB /* AratechUsersTests */,
+				C750F17A25A3DFC000D5A9CB /* AratechUsersUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C750F15825A3DFBE00D5A9CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C750F16A25A3DFC000D5A9CB /* LaunchScreen.storyboard in Resources */,
+				C750F16725A3DFC000D5A9CB /* Assets.xcassets in Resources */,
+				C750F16525A3DFBE00D5A9CB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C750F16E25A3DFC000D5A9CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C750F17925A3DFC000D5A9CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C750F15625A3DFBE00D5A9CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C750F16225A3DFBE00D5A9CB /* ViewController.swift in Sources */,
+				C750F15E25A3DFBE00D5A9CB /* AppDelegate.swift in Sources */,
+				C750F16025A3DFBE00D5A9CB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C750F16C25A3DFC000D5A9CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C750F17525A3DFC000D5A9CB /* AratechUsersTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C750F17725A3DFC000D5A9CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C750F18025A3DFC000D5A9CB /* AratechUsersUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C750F17225A3DFC000D5A9CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C750F15925A3DFBE00D5A9CB /* AratechUsers */;
+			targetProxy = C750F17125A3DFC000D5A9CB /* PBXContainerItemProxy */;
+		};
+		C750F17D25A3DFC000D5A9CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C750F15925A3DFBE00D5A9CB /* AratechUsers */;
+			targetProxy = C750F17C25A3DFC000D5A9CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C750F16325A3DFBE00D5A9CB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C750F16425A3DFBE00D5A9CB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C750F16825A3DFC000D5A9CB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C750F16925A3DFC000D5A9CB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C750F18225A3DFC000D5A9CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C750F18325A3DFC000D5A9CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C750F18525A3DFC000D5A9CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 998HSZS578;
+				INFOPLIST_FILE = AratechUsers/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.esther.AratechUsers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C750F18625A3DFC000D5A9CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 998HSZS578;
+				INFOPLIST_FILE = AratechUsers/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.esther.AratechUsers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C750F18825A3DFC000D5A9CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 998HSZS578;
+				INFOPLIST_FILE = AratechUsersTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.esther.AratechUsersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AratechUsers.app/AratechUsers";
+			};
+			name = Debug;
+		};
+		C750F18925A3DFC000D5A9CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 998HSZS578;
+				INFOPLIST_FILE = AratechUsersTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.esther.AratechUsersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AratechUsers.app/AratechUsers";
+			};
+			name = Release;
+		};
+		C750F18B25A3DFC000D5A9CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 998HSZS578;
+				INFOPLIST_FILE = AratechUsersUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.esther.AratechUsersUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AratechUsers;
+			};
+			name = Debug;
+		};
+		C750F18C25A3DFC000D5A9CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 998HSZS578;
+				INFOPLIST_FILE = AratechUsersUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.esther.AratechUsersUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AratechUsers;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C750F15525A3DFBE00D5A9CB /* Build configuration list for PBXProject "AratechUsers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C750F18225A3DFC000D5A9CB /* Debug */,
+				C750F18325A3DFC000D5A9CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C750F18425A3DFC000D5A9CB /* Build configuration list for PBXNativeTarget "AratechUsers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C750F18525A3DFC000D5A9CB /* Debug */,
+				C750F18625A3DFC000D5A9CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C750F18725A3DFC000D5A9CB /* Build configuration list for PBXNativeTarget "AratechUsersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C750F18825A3DFC000D5A9CB /* Debug */,
+				C750F18925A3DFC000D5A9CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C750F18A25A3DFC000D5A9CB /* Build configuration list for PBXNativeTarget "AratechUsersUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C750F18B25A3DFC000D5A9CB /* Debug */,
+				C750F18C25A3DFC000D5A9CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C750F15225A3DFBE00D5A9CB /* Project object */;
+}
