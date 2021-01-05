@@ -3,11 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		9B3A11F8192FA160FC3F35E0 /* Pods_AratechUsers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42E5B5F4D6FA2FE68892B047 /* Pods_AratechUsers.framework */; };
+		C73D4DC925A46D53008FE0C8 /* ServicesConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D4DC825A46D53008FE0C8 /* ServicesConstants.swift */; };
+		C73D4DD425A48BD5008FE0C8 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D4DD325A48BD5008FE0C8 /* HomeProtocols.swift */; };
+		C73D4DD925A4959A008FE0C8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D4DD825A4959A008FE0C8 /* HomeViewController.swift */; };
+		C73D4DDE25A495F3008FE0C8 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D4DDD25A495F3008FE0C8 /* HomePresenter.swift */; };
+		C73D4DE325A4BF2A008FE0C8 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D4DE225A4BF2A008FE0C8 /* HomeRouter.swift */; };
+		C73D4DE825A4BF39008FE0C8 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D4DE725A4BF39008FE0C8 /* HomeInteractor.swift */; };
+		C73D4DED25A4BF8A008FE0C8 /* FunctionsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D4DEC25A4BF8A008FE0C8 /* FunctionsConstants.swift */; };
+		C73D4DFA25A4F090008FE0C8 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D4DF925A4F090008FE0C8 /* HomeTableViewCell.swift */; };
 		C750F15E25A3DFBE00D5A9CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750F15D25A3DFBE00D5A9CB /* AppDelegate.swift */; };
 		C750F16025A3DFBE00D5A9CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750F15F25A3DFBE00D5A9CB /* SceneDelegate.swift */; };
 		C750F16225A3DFBE00D5A9CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750F16125A3DFBE00D5A9CB /* ViewController.swift */; };
@@ -16,6 +24,7 @@
 		C750F16A25A3DFC000D5A9CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C750F16825A3DFC000D5A9CB /* LaunchScreen.storyboard */; };
 		C750F17525A3DFC000D5A9CB /* AratechUsersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750F17425A3DFC000D5A9CB /* AratechUsersTests.swift */; };
 		C750F18025A3DFC000D5A9CB /* AratechUsersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750F17F25A3DFC000D5A9CB /* AratechUsersUITests.swift */; };
+		C750F1AB25A3EBFD00D5A9CB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750F1AA25A3EBFD00D5A9CB /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +48,14 @@
 		42E5B5F4D6FA2FE68892B047 /* Pods_AratechUsers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AratechUsers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87722203084E2C3D2C9D81C8 /* Pods-AratechUsers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AratechUsers.release.xcconfig"; path = "Target Support Files/Pods-AratechUsers/Pods-AratechUsers.release.xcconfig"; sourceTree = "<group>"; };
 		C489BF9D2158425F424B82F4 /* Pods-AratechUsers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AratechUsers.debug.xcconfig"; path = "Target Support Files/Pods-AratechUsers/Pods-AratechUsers.debug.xcconfig"; sourceTree = "<group>"; };
+		C73D4DC825A46D53008FE0C8 /* ServicesConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesConstants.swift; sourceTree = "<group>"; };
+		C73D4DD325A48BD5008FE0C8 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
+		C73D4DD825A4959A008FE0C8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C73D4DDD25A495F3008FE0C8 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		C73D4DE225A4BF2A008FE0C8 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		C73D4DE725A4BF39008FE0C8 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		C73D4DEC25A4BF8A008FE0C8 /* FunctionsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionsConstants.swift; sourceTree = "<group>"; };
+		C73D4DF925A4F090008FE0C8 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		C750F15A25A3DFBE00D5A9CB /* AratechUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AratechUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C750F15D25A3DFBE00D5A9CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C750F15F25A3DFBE00D5A9CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +70,7 @@
 		C750F17B25A3DFC000D5A9CB /* AratechUsersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AratechUsersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C750F17F25A3DFC000D5A9CB /* AratechUsersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AratechUsersUITests.swift; sourceTree = "<group>"; };
 		C750F18125A3DFC000D5A9CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C750F1AA25A3EBFD00D5A9CB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +107,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C73D4DC725A46D41008FE0C8 /* app_constants */ = {
+			isa = PBXGroup;
+			children = (
+				C73D4DC825A46D53008FE0C8 /* ServicesConstants.swift */,
+				C73D4DEC25A4BF8A008FE0C8 /* FunctionsConstants.swift */,
+			);
+			path = app_constants;
+			sourceTree = "<group>";
+		};
 		C750F15125A3DFBE00D5A9CB = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				C750F15D25A3DFBE00D5A9CB /* AppDelegate.swift */,
+				C750F19E25A3E9E200D5A9CB /* common_utils */,
+				C750F19F25A3E9EA00D5A9CB /* app_modules */,
 				C750F15F25A3DFBE00D5A9CB /* SceneDelegate.swift */,
 				C750F16125A3DFBE00D5A9CB /* ViewController.swift */,
 				C750F16325A3DFBE00D5A9CB /* Main.storyboard */,
@@ -143,13 +172,90 @@
 			path = AratechUsersUITests;
 			sourceTree = "<group>";
 		};
+		C750F19E25A3E9E200D5A9CB /* common_utils */ = {
+			isa = PBXGroup;
+			children = (
+				C73D4DC725A46D41008FE0C8 /* app_constants */,
+			);
+			path = common_utils;
+			sourceTree = "<group>";
+		};
+		C750F19F25A3E9EA00D5A9CB /* app_modules */ = {
+			isa = PBXGroup;
+			children = (
+				C750F1A325A3EAE700D5A9CB /* aratechusers_list_users_module */,
+			);
+			path = app_modules;
+			sourceTree = "<group>";
+		};
+		C750F1A325A3EAE700D5A9CB /* aratechusers_list_users_module */ = {
+			isa = PBXGroup;
+			children = (
+				C750F1A925A3EB4A00D5A9CB /* router */,
+				C750F1A825A3EB4500D5A9CB /* interactor */,
+				C750F1A725A3EB3E00D5A9CB /* protocols */,
+				C750F1A425A3EB2900D5A9CB /* presenter */,
+				C750F1A525A3EB3100D5A9CB /* model */,
+				C750F1A625A3EB3700D5A9CB /* view */,
+			);
+			path = aratechusers_list_users_module;
+			sourceTree = "<group>";
+		};
+		C750F1A425A3EB2900D5A9CB /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C73D4DDD25A495F3008FE0C8 /* HomePresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		C750F1A525A3EB3100D5A9CB /* model */ = {
+			isa = PBXGroup;
+			children = (
+				C750F1AA25A3EBFD00D5A9CB /* User.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		C750F1A625A3EB3700D5A9CB /* view */ = {
+			isa = PBXGroup;
+			children = (
+				C73D4DD825A4959A008FE0C8 /* HomeViewController.swift */,
+				C73D4DF925A4F090008FE0C8 /* HomeTableViewCell.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		C750F1A725A3EB3E00D5A9CB /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C73D4DD325A48BD5008FE0C8 /* HomeProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		C750F1A825A3EB4500D5A9CB /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				C73D4DE725A4BF39008FE0C8 /* HomeInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		C750F1A925A3EB4A00D5A9CB /* router */ = {
+			isa = PBXGroup;
+			children = (
+				C73D4DE225A4BF2A008FE0C8 /* HomeRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
 		F8511DD66B5E7C791C3EAEAE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				C489BF9D2158425F424B82F4 /* Pods-AratechUsers.debug.xcconfig */,
 				87722203084E2C3D2C9D81C8 /* Pods-AratechUsers.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -327,9 +433,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C750F1AB25A3EBFD00D5A9CB /* User.swift in Sources */,
 				C750F16225A3DFBE00D5A9CB /* ViewController.swift in Sources */,
 				C750F15E25A3DFBE00D5A9CB /* AppDelegate.swift in Sources */,
+				C73D4DE825A4BF39008FE0C8 /* HomeInteractor.swift in Sources */,
+				C73D4DC925A46D53008FE0C8 /* ServicesConstants.swift in Sources */,
+				C73D4DD425A48BD5008FE0C8 /* HomeProtocols.swift in Sources */,
+				C73D4DFA25A4F090008FE0C8 /* HomeTableViewCell.swift in Sources */,
+				C73D4DD925A4959A008FE0C8 /* HomeViewController.swift in Sources */,
 				C750F16025A3DFBE00D5A9CB /* SceneDelegate.swift in Sources */,
+				C73D4DED25A4BF8A008FE0C8 /* FunctionsConstants.swift in Sources */,
+				C73D4DE325A4BF2A008FE0C8 /* HomeRouter.swift in Sources */,
+				C73D4DDE25A495F3008FE0C8 /* HomePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
