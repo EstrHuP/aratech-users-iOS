@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B3A11F8192FA160FC3F35E0 /* Pods_AratechUsers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42E5B5F4D6FA2FE68892B047 /* Pods_AratechUsers.framework */; };
 		C750F15E25A3DFBE00D5A9CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750F15D25A3DFBE00D5A9CB /* AppDelegate.swift */; };
 		C750F16025A3DFBE00D5A9CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750F15F25A3DFBE00D5A9CB /* SceneDelegate.swift */; };
 		C750F16225A3DFBE00D5A9CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750F16125A3DFBE00D5A9CB /* ViewController.swift */; };
@@ -35,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		42E5B5F4D6FA2FE68892B047 /* Pods_AratechUsers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AratechUsers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87722203084E2C3D2C9D81C8 /* Pods-AratechUsers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AratechUsers.release.xcconfig"; path = "Target Support Files/Pods-AratechUsers/Pods-AratechUsers.release.xcconfig"; sourceTree = "<group>"; };
+		C489BF9D2158425F424B82F4 /* Pods-AratechUsers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AratechUsers.debug.xcconfig"; path = "Target Support Files/Pods-AratechUsers/Pods-AratechUsers.debug.xcconfig"; sourceTree = "<group>"; };
 		C750F15A25A3DFBE00D5A9CB /* AratechUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AratechUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C750F15D25A3DFBE00D5A9CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C750F15F25A3DFBE00D5A9CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B3A11F8192FA160FC3F35E0 /* Pods_AratechUsers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		98EFAC44030A5CADEB047239 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42E5B5F4D6FA2FE68892B047 /* Pods_AratechUsers.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C750F15125A3DFBE00D5A9CB = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +96,8 @@
 				C750F17325A3DFC000D5A9CB /* AratechUsersTests */,
 				C750F17E25A3DFC000D5A9CB /* AratechUsersUITests */,
 				C750F15B25A3DFBE00D5A9CB /* Products */,
+				F8511DD66B5E7C791C3EAEAE /* Pods */,
+				98EFAC44030A5CADEB047239 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +143,16 @@
 			path = AratechUsersUITests;
 			sourceTree = "<group>";
 		};
+		F8511DD66B5E7C791C3EAEAE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C489BF9D2158425F424B82F4 /* Pods-AratechUsers.debug.xcconfig */,
+				87722203084E2C3D2C9D81C8 /* Pods-AratechUsers.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C750F18425A3DFC000D5A9CB /* Build configuration list for PBXNativeTarget "AratechUsers" */;
 			buildPhases = (
+				607863504E83063D5E2A6D77 /* [CP] Check Pods Manifest.lock */,
 				C750F15625A3DFBE00D5A9CB /* Sources */,
 				C750F15725A3DFBE00D5A9CB /* Frameworks */,
 				C750F15825A3DFBE00D5A9CB /* Resources */,
+				69DA3FEB8B6C407B95F6949F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +279,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		607863504E83063D5E2A6D77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AratechUsers-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69DA3FEB8B6C407B95F6949F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AratechUsers/Pods-AratechUsers-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AratechUsers/Pods-AratechUsers-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AratechUsers/Pods-AratechUsers-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C750F15625A3DFBE00D5A9CB /* Sources */ = {
@@ -433,6 +502,7 @@
 		};
 		C750F18525A3DFC000D5A9CB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C489BF9D2158425F424B82F4 /* Pods-AratechUsers.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +522,7 @@
 		};
 		C750F18625A3DFC000D5A9CB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87722203084E2C3D2C9D81C8 /* Pods-AratechUsers.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
