@@ -33,8 +33,9 @@ class AddNewUserViewController: UIViewController {
     @IBAction func actionSaveNewUser(_ sender: Any) {
         if !self.ui_name_textfield.text!.isEmpty && !self.ui_birthdate_textfield.text!.isEmpty {
             /// TODO ¿FIX? - al hacer la llamada al endpoint, name me lo guarda como "name \(id)" cuando realmente le estoy pasando el textfield completo y al hacer un po ui_name_textfield en la consola, si que me responde bien el valor introducido.
+            /// Pasa lo mismo con la fecha... No me da valor correcto a la hora de enviarlo a la api
             self.presenter?.postAddNewUser(sendUser: User.init(id: "", name: self.ui_name_textfield.text!, birthdate: self.ui_birthdate_textfield.text!))
-//            self.loadingView.show(on: view)
+            self.dismiss(animated: true, completion: nil)
         }else{
 //            SPAlert.present(message: NSLocalizedString("Contact_empty_fields", comment: ""))
             
@@ -83,12 +84,11 @@ class AddNewUserViewController: UIViewController {
     }
     
     @objc func datePickerChanged(picker: UIDatePicker) {
-        let formatter = DateFormatter()
-        formatter.dateFormat = self.format_datepicker_birthday
-        
-        ///TODO - parse date to string
-        // si no parseo a string, cuando hago la llamada a api me devuelve un Data en vez de un string.
-        self.ui_birthdate_textfield.text =  formatter.string(from: self.ui_birthday_datepicker.date)
+        let date = Date()
+        let df = DateFormatter()
+        df.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        let dateString = df.string(from: date)
+        self.ui_birthdate_textfield.text = dateString
     }
 
     @objc func doneDatePickerBirthday(){

@@ -25,6 +25,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidAppear(_ animated: Bool) {
         self.presenter?.getListUsers() //get list
+        self.ui_tableview.reloadData()
     }
     
     //Show screen to add new user
