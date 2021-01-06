@@ -13,16 +13,24 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     var listUsers: [User] = []
     
     //MARK: - Outlets
-    @IBOutlet var ui_tableview: UITableView!
+    @IBOutlet weak var ui_tableview: UITableView!
+    @IBOutlet weak var ui_addUser_btn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.listUsers = [] //empty list
+        self.ui_addUser_btn.floatingButton() //design floating button
     }
     
     override func viewDidAppear(_ animated: Bool) {
         self.presenter?.getListUsers() //get list
+    }
+    
+    //Show screen to add new user
+    @IBAction func actionAddUser(_ sender: Any) {
+        let addUserVC = AddNewUserRouter.createModule()
+        self.present(addUserVC, animated: true, completion: nil)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
