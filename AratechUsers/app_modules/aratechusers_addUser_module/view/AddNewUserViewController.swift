@@ -31,8 +31,12 @@ class AddNewUserViewController: UIViewController {
         
         //Create DatePicker Birthday
         self.createDatePickerBirthday()
+        
+        //localize string
+        self.localizabled()
     }
     
+    //MARK: -Actions
     @IBAction func actionSaveNewUser(_ sender: Any) {
         if !self.ui_name_textfield.text!.isEmpty && !self.ui_birthdate_textfield.text!.isEmpty {
             self.presenter?.postAddNewUser(sendUser: User.init(id: "", name: self.ui_name_textfield.text!, birthdate: self.ui_birthdate_textfield.text!))
@@ -40,6 +44,13 @@ class AddNewUserViewController: UIViewController {
         }else{
             SPAlert.present(message: NSLocalizedString("Add_user_alert_body_error", comment: ""), haptic: .error)
         }
+    }
+    
+    func localizabled() {
+        self.ui_title_label.text = NSLocalizedString("Add_user_title", comment: "")
+        self.ui_name_label.text = NSLocalizedString("User_name_title", comment: "")
+        self.ui_birthdate_label.text = NSLocalizedString("User_birthdate_title", comment: "")
+        self.ui_save_btn.setTitle(NSLocalizedString("Add_title_btn", comment: ""), for: .normal)
     }
     
     //MARK: - DatePicker Birthday
