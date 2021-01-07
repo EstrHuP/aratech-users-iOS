@@ -47,7 +47,14 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         return cell
     }
-
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //Send data to next screen (DetailUserViewController)
+        let itemId = listUsers[indexPath.row].id
+        let module = DetailUserRouter.createModule()
+        module.prepareData(id: itemId)
+        self.present(module, animated: true, completion: nil)
+    }
 }
 
 extension HomeViewController: PresenterToViewHomeProtocol {

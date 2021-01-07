@@ -22,6 +22,11 @@
 		C73D4E1A25A52AC6008FE0C8 /* AddNewUserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D4E1925A52AC6008FE0C8 /* AddNewUserPresenter.swift */; };
 		C73D4E2425A53454008FE0C8 /* AddNewUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D4E2325A53454008FE0C8 /* AddNewUserViewController.swift */; };
 		C73D4E2B25A538F9008FE0C8 /* ExtButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D4E2A25A538F9008FE0C8 /* ExtButton.swift */; };
+		C73E51FF25A66BD4002BD1F0 /* DetailUserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73E51FE25A66BD4002BD1F0 /* DetailUserRouter.swift */; };
+		C73E520425A66BF4002BD1F0 /* DetailUserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73E520325A66BF4002BD1F0 /* DetailUserInteractor.swift */; };
+		C73E520925A66C12002BD1F0 /* DetailUserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73E520825A66C12002BD1F0 /* DetailUserPresenter.swift */; };
+		C73E520E25A66C32002BD1F0 /* DetailUserProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73E520D25A66C32002BD1F0 /* DetailUserProtocols.swift */; };
+		C73E521325A66C5B002BD1F0 /* DetailUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73E521225A66C5B002BD1F0 /* DetailUserViewController.swift */; };
 		C750F15E25A3DFBE00D5A9CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750F15D25A3DFBE00D5A9CB /* AppDelegate.swift */; };
 		C750F16025A3DFBE00D5A9CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750F15F25A3DFBE00D5A9CB /* SceneDelegate.swift */; };
 		C750F16225A3DFBE00D5A9CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750F16125A3DFBE00D5A9CB /* ViewController.swift */; };
@@ -68,6 +73,11 @@
 		C73D4E1925A52AC6008FE0C8 /* AddNewUserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewUserPresenter.swift; sourceTree = "<group>"; };
 		C73D4E2325A53454008FE0C8 /* AddNewUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewUserViewController.swift; sourceTree = "<group>"; };
 		C73D4E2A25A538F9008FE0C8 /* ExtButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtButton.swift; sourceTree = "<group>"; };
+		C73E51FE25A66BD4002BD1F0 /* DetailUserRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailUserRouter.swift; sourceTree = "<group>"; };
+		C73E520325A66BF4002BD1F0 /* DetailUserInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailUserInteractor.swift; sourceTree = "<group>"; };
+		C73E520825A66C12002BD1F0 /* DetailUserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailUserPresenter.swift; sourceTree = "<group>"; };
+		C73E520D25A66C32002BD1F0 /* DetailUserProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailUserProtocols.swift; sourceTree = "<group>"; };
+		C73E521225A66C5B002BD1F0 /* DetailUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailUserViewController.swift; sourceTree = "<group>"; };
 		C750F15A25A3DFBE00D5A9CB /* AratechUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AratechUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C750F15D25A3DFBE00D5A9CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C750F15F25A3DFBE00D5A9CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -196,6 +206,58 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		C73E51F825A66B07002BD1F0 /* aratechusers_details_put_users_module */ = {
+			isa = PBXGroup;
+			children = (
+				C73E51FD25A66B5D002BD1F0 /* router */,
+				C73E51FC25A66B3F002BD1F0 /* interactor */,
+				C73E51FB25A66B37002BD1F0 /* presenter */,
+				C73E51FA25A66B2D002BD1F0 /* protocols */,
+				C73E51F925A66B26002BD1F0 /* view */,
+			);
+			path = aratechusers_details_put_users_module;
+			sourceTree = "<group>";
+		};
+		C73E51F925A66B26002BD1F0 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				C73E521225A66C5B002BD1F0 /* DetailUserViewController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		C73E51FA25A66B2D002BD1F0 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C73E520D25A66C32002BD1F0 /* DetailUserProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		C73E51FB25A66B37002BD1F0 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C73E520825A66C12002BD1F0 /* DetailUserPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		C73E51FC25A66B3F002BD1F0 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				C73E520325A66BF4002BD1F0 /* DetailUserInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		C73E51FD25A66B5D002BD1F0 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				C73E51FE25A66BD4002BD1F0 /* DetailUserRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
 		C750F15125A3DFBE00D5A9CB = {
 			isa = PBXGroup;
 			children = (
@@ -265,6 +327,7 @@
 			isa = PBXGroup;
 			children = (
 				C73D4E0325A52961008FE0C8 /* aratechusers_addUser_module */,
+				C73E51F825A66B07002BD1F0 /* aratechusers_details_put_users_module */,
 				C750F1A325A3EAE700D5A9CB /* aratechusers_list_users_module */,
 			);
 			path = app_modules;
@@ -516,19 +579,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				C73D4E1025A52AAC008FE0C8 /* AddNewUserInteractor.swift in Sources */,
+				C73E51FF25A66BD4002BD1F0 /* DetailUserRouter.swift in Sources */,
+				C73E520425A66BF4002BD1F0 /* DetailUserInteractor.swift in Sources */,
 				C750F1AB25A3EBFD00D5A9CB /* User.swift in Sources */,
 				C750F16225A3DFBE00D5A9CB /* ViewController.swift in Sources */,
 				C750F15E25A3DFBE00D5A9CB /* AppDelegate.swift in Sources */,
 				C73D4DE825A4BF39008FE0C8 /* HomeInteractor.swift in Sources */,
+				C73E520E25A66C32002BD1F0 /* DetailUserProtocols.swift in Sources */,
 				C73D4E1525A52AB7008FE0C8 /* AddNewUserProtocols.swift in Sources */,
 				C73D4DC925A46D53008FE0C8 /* ServicesConstants.swift in Sources */,
 				C73D4DD425A48BD5008FE0C8 /* HomeProtocols.swift in Sources */,
 				C73D4DFA25A4F090008FE0C8 /* HomeTableViewCell.swift in Sources */,
 				C73D4DD925A4959A008FE0C8 /* HomeViewController.swift in Sources */,
 				C73D4E0B25A52AA1008FE0C8 /* AddNewUserRouter.swift in Sources */,
+				C73E520925A66C12002BD1F0 /* DetailUserPresenter.swift in Sources */,
 				C73D4E2B25A538F9008FE0C8 /* ExtButton.swift in Sources */,
 				C750F16025A3DFBE00D5A9CB /* SceneDelegate.swift in Sources */,
 				C73D4DED25A4BF8A008FE0C8 /* FunctionsConstants.swift in Sources */,
+				C73E521325A66C5B002BD1F0 /* DetailUserViewController.swift in Sources */,
 				C73D4E2425A53454008FE0C8 /* AddNewUserViewController.swift in Sources */,
 				C73D4DE325A4BF2A008FE0C8 /* HomeRouter.swift in Sources */,
 				C73D4E1A25A52AC6008FE0C8 /* AddNewUserPresenter.swift in Sources */,
