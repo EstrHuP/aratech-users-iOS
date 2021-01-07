@@ -6,6 +6,7 @@ target 'AratechUsers' do
   use_frameworks!
 
   pod 'Alamofire'
+  pod 'SPAlert'
 end
   
 

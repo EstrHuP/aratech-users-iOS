@@ -36,6 +36,7 @@
 		C750F17525A3DFC000D5A9CB /* AratechUsersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750F17425A3DFC000D5A9CB /* AratechUsersTests.swift */; };
 		C750F18025A3DFC000D5A9CB /* AratechUsersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750F17F25A3DFC000D5A9CB /* AratechUsersUITests.swift */; };
 		C750F1AB25A3EBFD00D5A9CB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750F1AA25A3EBFD00D5A9CB /* User.swift */; };
+		C7DCF50B25A69C7500FB1764 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7DCF50A25A69C7500FB1764 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		C750F17F25A3DFC000D5A9CB /* AratechUsersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AratechUsersUITests.swift; sourceTree = "<group>"; };
 		C750F18125A3DFC000D5A9CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C750F1AA25A3EBFD00D5A9CB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C7DCF50A25A69C7500FB1764 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -292,6 +294,7 @@
 				C750F16625A3DFC000D5A9CB /* Assets.xcassets */,
 				C750F16825A3DFC000D5A9CB /* LaunchScreen.storyboard */,
 				C750F16B25A3DFC000D5A9CB /* Info.plist */,
+				C7DCF50A25A69C7500FB1764 /* Localizable.strings */,
 			);
 			path = AratechUsers;
 			sourceTree = "<group>";
@@ -510,6 +513,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C750F16A25A3DFC000D5A9CB /* LaunchScreen.storyboard in Resources */,
+				C7DCF50B25A69C7500FB1764 /* Localizable.strings in Resources */,
 				C750F16725A3DFC000D5A9CB /* Assets.xcassets in Resources */,
 				C750F16525A3DFBE00D5A9CB /* Main.storyboard in Resources */,
 			);

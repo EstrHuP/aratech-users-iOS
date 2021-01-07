@@ -10,16 +10,21 @@ import Foundation
 protocol PresenterToViewDetailUserProtocol: class {
     func getDetailUserSuccess(data: User)
     func getDetailUserError()
+    func putDetailUserSuccess(putData: User)
+    func putDetailUserError()
 }
 
 protocol InteractorToPresenterDetailUserProtocol: class {
     func getDetailUserFetched(data: User)
     func getDetailUserFailed()
+    func putDetailUserFetched(putData: User)
+    func putDetailUserError()
 }
 
 protocol PresenterToInteractorDetailUserProtocol: class {
     var presenter: InteractorToPresenterDetailUserProtocol? {get set}
     func fetchDetailUser(id: String)
+    func fetchPutDetailUser(id: String)
 }
 
 protocol ViewToPresenterDetailUserProtocol: class {
@@ -28,6 +33,7 @@ protocol ViewToPresenterDetailUserProtocol: class {
     var router: PresenterToRouterDetailUserProtocol? {get set}
     
     func getDetailUser(id: String)
+    func putDetailUser(id: String)
 }
 
 protocol PresenterToRouterDetailUserProtocol: class {

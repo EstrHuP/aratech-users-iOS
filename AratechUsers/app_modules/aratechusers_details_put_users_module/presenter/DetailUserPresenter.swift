@@ -16,6 +16,10 @@ class DetailUserPresenter: ViewToPresenterDetailUserProtocol {
     func getDetailUser(id: String) {
         interactor?.fetchDetailUser(id: id)
     }
+    
+    func putDetailUser(id: String) {
+        interactor?.fetchPutDetailUser(id: id)
+    }
 }
 
 extension DetailUserPresenter: InteractorToPresenterDetailUserProtocol {
@@ -25,5 +29,13 @@ extension DetailUserPresenter: InteractorToPresenterDetailUserProtocol {
     
     func getDetailUserFailed() {
         view?.getDetailUserError()
+    }
+    
+    func putDetailUserFetched(putData: User) {
+        view?.putDetailUserSuccess(putData: putData)
+    }
+    
+    func putDetailUserError() {
+        view?.putDetailUserError()
     }
 }

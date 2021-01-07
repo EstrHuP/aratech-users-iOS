@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  AratechUsers
+
+  Created by Esther Huecas on 07/01/2021.
+  
+*/
+
+/* Global */
+"User_name_title" = "Nombre";
+"User_birthdate_title" = "Fecha de nacimiento";
+
+/* Edit user */
+"Edit_title_btn" = "Editar";
+"Save_title_btn" = "Guardar";
+"Show_user_title" = "USUARIO: ";
+"Edit_user_title" = "EDITAR USUARIO: ";
+"Cancel_title_btn" = "Cancelar";
+"Cancel_alert_title" = "¿Estás seguro?";
+"Cancel_alert_body" = "¿Seguro de que quieres descartar los cambios?";
+"Cancel_alert_yes" = "Si";
+"Cancel_alert_no" = "No";
+"Alert_body_save" = "Su usuario se ha editado correctamente"
+
+/* Add new user */
+"Add_title_btn" = "Añadir";

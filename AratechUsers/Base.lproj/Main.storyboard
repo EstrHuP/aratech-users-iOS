@@ -196,34 +196,53 @@
                                     <constraint firstItem="vmc-bM-nbP" firstAttribute="leading" secondItem="H6b-yW-qXd" secondAttribute="leading" id="qwv-1d-wEg"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hq9-9n-LgN">
-                                <rect key="frame" x="20" y="244" width="374" height="30"/>
-                                <color key="backgroundColor" systemColor="systemGray6Color"/>
-                                <state key="normal" title="Editar">
-                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="actionSaveNewUser:" destination="rIq-ed-mWd" eventType="touchUpInside" id="jtz-4z-P6j"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eFW-Kj-goP">
+                                <rect key="frame" x="20" y="244" width="374" height="68"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hq9-9n-LgN">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <state key="normal" title="Edit">
+                                            <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="actionEdit:" destination="EkA-RP-3a5" eventType="touchUpInside" id="OVd-LV-A4W"/>
+                                            <action selector="actionSaveNewUser:" destination="rIq-ed-mWd" eventType="touchUpInside" id="jtz-4z-P6j"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gky-tT-WeO">
+                                        <rect key="frame" x="0.0" y="38" width="374" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="actionCancel:" destination="EkA-RP-3a5" eventType="touchUpInside" id="UsR-ce-E0C"/>
+                                            <action selector="actionEdit:" destination="EkA-RP-3a5" eventType="touchUpInside" id="kGg-8h-5Hd"/>
+                                            <action selector="actionSaveNewUser:" destination="rIq-ed-mWd" eventType="touchUpInside" id="BdD-Aq-VZ0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wAE-h7-o5p"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6jC-Jj-nZw" firstAttribute="leading" secondItem="wAE-h7-o5p" secondAttribute="leading" constant="20" id="9a5-jm-RMQ"/>
-                            <constraint firstItem="Hq9-9n-LgN" firstAttribute="top" secondItem="H6b-yW-qXd" secondAttribute="bottom" constant="20" id="BdD-ip-6Fw"/>
                             <constraint firstItem="wAE-h7-o5p" firstAttribute="trailing" secondItem="6jC-Jj-nZw" secondAttribute="trailing" constant="20" id="Dea-pw-6yX"/>
-                            <constraint firstItem="Hq9-9n-LgN" firstAttribute="leading" secondItem="wAE-h7-o5p" secondAttribute="leading" constant="20" id="HAb-t1-BsN"/>
                             <constraint firstItem="6jC-Jj-nZw" firstAttribute="top" secondItem="wAE-h7-o5p" secondAttribute="top" constant="30" id="Kcj-hK-SzU"/>
                             <constraint firstItem="H6b-yW-qXd" firstAttribute="top" secondItem="6jC-Jj-nZw" secondAttribute="bottom" constant="20" id="Wh5-m7-eTH"/>
+                            <constraint firstItem="eFW-Kj-goP" firstAttribute="leading" secondItem="wAE-h7-o5p" secondAttribute="leading" constant="20" id="Z28-VB-RgS"/>
                             <constraint firstItem="H6b-yW-qXd" firstAttribute="leading" secondItem="wAE-h7-o5p" secondAttribute="leading" constant="20" id="bga-ZR-Idi"/>
+                            <constraint firstItem="wAE-h7-o5p" firstAttribute="trailing" secondItem="eFW-Kj-goP" secondAttribute="trailing" constant="20" id="omn-VW-fp4"/>
                             <constraint firstItem="wAE-h7-o5p" firstAttribute="trailing" secondItem="H6b-yW-qXd" secondAttribute="trailing" constant="20" id="onf-Sb-SMd"/>
-                            <constraint firstItem="wAE-h7-o5p" firstAttribute="trailing" secondItem="Hq9-9n-LgN" secondAttribute="trailing" constant="20" id="xe1-Mj-b7E"/>
+                            <constraint firstItem="eFW-Kj-goP" firstAttribute="top" secondItem="H6b-yW-qXd" secondAttribute="bottom" constant="20" id="zJq-zk-JR7"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="ui_birthdate_label" destination="7V7-Xp-YhM" id="E2p-9d-Qm9"/>
                         <outlet property="ui_birthdate_textfield" destination="vmc-bM-nbP" id="Lyl-Jn-OFB"/>
+                        <outlet property="ui_cancel_btn" destination="Gky-tT-WeO" id="T8T-Fj-Bzc"/>
                         <outlet property="ui_edit_btn" destination="Hq9-9n-LgN" id="YmX-nf-Cnu"/>
                         <outlet property="ui_name_label" destination="waa-sP-YXN" id="4so-h2-TWF"/>
                         <outlet property="ui_name_textfield" destination="aLN-bg-sh1" id="B3G-np-zXJ"/>
@@ -332,6 +351,9 @@
         </systemColor>
         <systemColor name="systemGray3Color">
             <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
