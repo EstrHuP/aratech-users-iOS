@@ -71,13 +71,13 @@ class DetailUserViewController: UIViewController {
         let refreshAlert = UIAlertController(title: NSLocalizedString("Cancel_alert_title", comment: ""), message: NSLocalizedString("Cancel_alert_body", comment: ""), preferredStyle: UIAlertController.Style.alert)
 
         refreshAlert.addAction(UIAlertAction(title: NSLocalizedString("Cancel_alert_yes", comment: ""), style: .default, handler: { (action: UIAlertAction!) in
-            if self.count == 3 {
+            if self.count == 1 {
                 self.count = 0
                 self.isPressedEditBtn = false
                 self.funcionalityBoolEditBtn()
             }
         }))
-
+        self.count = 0
         refreshAlert.addAction(UIAlertAction(title: NSLocalizedString("Cancel_alert_no", comment: ""), style: .cancel, handler: { (action: UIAlertAction!) in
         }))
         present(refreshAlert, animated: true, completion: nil)
