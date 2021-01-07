@@ -19,6 +19,7 @@ class AddNewUserInteractor: PresenterToInteractorAddUserProtocol {
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.setValue("application/json", forHTTPHeaderField: "Accept")
+        request.httpBody = try! JSONEncoder().encode(sendUser)
         
         AF.request(request).responseJSON{ (response) in switch response.result {
         case.success(let JSON):
