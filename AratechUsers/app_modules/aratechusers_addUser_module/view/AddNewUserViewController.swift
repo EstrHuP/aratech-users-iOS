@@ -6,11 +6,14 @@
 //
 
 import UIKit
+import SPAlert
+import RSLoadingView
 
 class AddNewUserViewController: UIViewController {
     
     //VIPER
     var presenter: ViewToPresenterAddUserProtocol?
+    var loadingView: RSLoadingView = RSLoadingView()
 
     //MARK: - IBOutlets
     @IBOutlet weak var ui_title_label: UILabel!
@@ -32,19 +35,16 @@ class AddNewUserViewController: UIViewController {
     
     @IBAction func actionSaveNewUser(_ sender: Any) {
         if !self.ui_name_textfield.text!.isEmpty && !self.ui_birthdate_textfield.text!.isEmpty {
-            /// TODO ¿FIX? - al hacer la llamada al endpoint, name me lo guarda como "name \(id)" cuando realmente le estoy pasando el textfield completo y al hacer un po ui_name_textfield en la consola, si que me responde bien el valor introducido.
-            /// Pasa lo mismo con la fecha... No me da valor correcto a la hora de enviarlo a la api
             self.presenter?.postAddNewUser(sendUser: User.init(id: "", name: self.ui_name_textfield.text!, birthdate: self.ui_birthdate_textfield.text!))
-            self.dismiss(animated: true, completion: nil)
+            self.loadingView.show(on: view)
         }else{
-//            SPAlert.present(message: NSLocalizedString("Contact_empty_fields", comment: ""))
-            
+            SPAlert.present(message: NSLocalizedString("Add_user_alert_body_error", comment: ""), haptic: .error)
         }
     }
     
     //MARK: - DatePicker Birthday
     func createDatePickerBirthday(){
-        FunctionConstants.shared.logMessage(message: "OnboardingStep1ViewController - createDatePickerBirthday")
+        FunctionConstants.shared.logMessage(message: "AddNewUserViewController - createDatePickerBirthdate")
         self.setDatePicker()
     }
     
@@ -69,14 +69,8 @@ class AddNewUserViewController: UIViewController {
     func createToolbarPicker()->UIToolbar{
         let toolbar = UIToolbar();
         toolbar.sizeToFit()
-        
-        ///TODO - Guardar los titulos en el archivo de Strings!!
-      //  let doneButton = UIBarButtonItem(title: "Input_select_done".localized, style: .plain, target: self, action: #selector(doneDatePickerBirthday))
         let doneButton = UIBarButtonItem(title: "Hecho", style: .plain, target: self, action: #selector(doneDatePickerBirthday))
-        
-        
         let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
-      //  let cancelButton = UIBarButtonItem(title: "Input_select_cancel".localized, style: .plain, target: self, action: #selector(cancelDatePickerBirthday))
         let cancelButton = UIBarButtonItem(title: "Cancelar", style: .plain, target: self, action: #selector(cancelDatePickerBirthday))
         toolbar.setItems([cancelButton,spaceButton,doneButton], animated: false)
         
@@ -108,6 +102,9 @@ class AddNewUserViewController: UIViewController {
 extension AddNewUserViewController : PresenterToViewAddUserProtocol {
     func addUserSuccess() {
         FunctionConstants.shared.logMessage(message: "AddNewUserViewController - postAddUserSuccess")
+        self.loadingView.hide()
+        SPAlert.present(message: NSLocalizedString("Add_user_success", comment: ""), haptic: .success)
+        self.dismiss(animated: true, completion: nil)
     }
     
     func addUserError() {

@@ -7,11 +7,14 @@
 
 import UIKit
 import SPAlert
+import RSLoadingView
 
 class DetailUserViewController: UIViewController {
     
     //VIPER
     var presenter: ViewToPresenterDetailUserProtocol?
+    //LoadingView
+    var loadingView: RSLoadingView = RSLoadingView()
     //Var
     var idPressed: String!
     var dataUser: User!
@@ -39,11 +42,12 @@ class DetailUserViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        //Show data in screen
         self.showData()
-        
     }
     
-    //MARK: IBActions
+    //MARK: -IBActions
+    //Dismiss this screen
     @IBAction func actionDismissScreen(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
@@ -55,6 +59,7 @@ class DetailUserViewController: UIViewController {
         if self.count == 2 {
             count = 0
             self.presenter?.putDetailUser(id: idPressed, object: User(id: "", name: self.ui_name_textfield.text!, birthdate: self.ui_birthdate_textfield.text!))
+            self.loadingView.show(on: view)
             self.isPressedEditBtn = false
             self.funcionalityBoolEditBtn()
         }
@@ -75,7 +80,6 @@ class DetailUserViewController: UIViewController {
 
         refreshAlert.addAction(UIAlertAction(title: NSLocalizedString("Cancel_alert_no", comment: ""), style: .cancel, handler: { (action: UIAlertAction!) in
         }))
-
         present(refreshAlert, animated: true, completion: nil)
     }
     
@@ -145,7 +149,7 @@ class DetailUserViewController: UIViewController {
     
     //MARK: - DatePicker Birthday
     func createDatePickerBirthday(){
-        FunctionConstants.shared.logMessage(message: "OnboardingStep1ViewController - createDatePickerBirthday")
+        FunctionConstants.shared.logMessage(message: "DetailUserViewController - createDatePickerBirthdate")
         self.setDatePicker()
     }
     
@@ -214,6 +218,7 @@ extension DetailUserViewController : PresenterToViewDetailUserProtocol {
     //MARK: Put detail to user
     func putDetailUserSuccess(putData: User) {
         FunctionConstants.shared.logMessage(message: "DetailUserViewController - putDetailUserSuccess")
+        self.loadingView.hide()
         SPAlert.present(message: NSLocalizedString("Alert_body_save", comment: ""), haptic: .success)
     }
     

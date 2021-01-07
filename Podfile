@@ -7,6 +7,7 @@ target 'AratechUsers' do
 
   pod 'Alamofire'
   pod 'SPAlert'
+  pod 'RSLoadingView'
 end
   
 

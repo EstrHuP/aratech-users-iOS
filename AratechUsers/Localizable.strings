@@ -24,4 +24,6 @@
 "Alert_ok_btn_save" = "Aceptar";
 
 /* Add new user */
+"Add_user_alert_body_error" = "Por favor, rellena todos los campos";
+"Add_user_success" = "Su usuario se ha añadido correctamente";
 "Add_title_btn" = "Añadir";

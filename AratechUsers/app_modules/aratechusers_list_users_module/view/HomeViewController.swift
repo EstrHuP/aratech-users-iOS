@@ -6,11 +6,14 @@
 //
 
 import UIKit
+import RSLoadingView
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     var presenter: ViewToPresenterHomeProtocol?
+    
     var listUsers: [User] = []
+    var loadingView: RSLoadingView = RSLoadingView()
     
     //MARK: - Outlets
     @IBOutlet weak var ui_tableview: UITableView!
@@ -21,6 +24,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         self.listUsers = [] //empty list
         self.ui_addUser_btn.floatingButton() //design floating button
+        
+        self.loadingView.show(on: view)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -60,6 +65,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 extension HomeViewController: PresenterToViewHomeProtocol {
     func showListUsersSuccess(object: [User]) {
         FunctionConstants.shared.logMessage(message: "HomeViewController - getShowListUsersSuccess")
+        self.loadingView.hide()
         self.listUsers = object //add data on list
         self.ui_tableview.reloadData() //reload data for show data
     }

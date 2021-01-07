@@ -1,20 +1,24 @@
 PODS:
   - Alamofire (5.4.1)
+  - RSLoadingView (1.1.3)
   - SPAlert (3.0.2)
 
 DEPENDENCIES:
   - Alamofire
+  - RSLoadingView
   - SPAlert
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - RSLoadingView
     - SPAlert
 
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  RSLoadingView: c7749afdd455229643e8f34277d0695973a15b1a
   SPAlert: cca658fa8be444f87f8228717410d4a8786b8178
 
-PODFILE CHECKSUM: 9592840aebdf0123ac1d20ea7ad5fd53962e52e1
+PODFILE CHECKSUM: f04722537d4229f3193dce90dc18733976783138
 
 COCOAPODS: 1.9.1
