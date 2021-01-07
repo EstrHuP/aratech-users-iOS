@@ -17,8 +17,8 @@ class DetailUserPresenter: ViewToPresenterDetailUserProtocol {
         interactor?.fetchDetailUser(id: id)
     }
     
-    func putDetailUser(id: String) {
-        interactor?.fetchPutDetailUser(id: id)
+    func putDetailUser(id: String, object: User) {
+        interactor?.fetchPutDetailUser(id: id, object: object)
     }
 }
 

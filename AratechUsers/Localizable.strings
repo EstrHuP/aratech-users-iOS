@@ -20,7 +20,8 @@
 "Cancel_alert_body" = "¿Seguro de que quieres descartar los cambios?";
 "Cancel_alert_yes" = "Si";
 "Cancel_alert_no" = "No";
-"Alert_body_save" = "Su usuario se ha editado correctamente"
+"Alert_body_save" = "Su usuario se ha editado correctamente";
+"Alert_ok_btn_save" = "Aceptar";
 
 /* Add new user */
 "Add_title_btn" = "Añadir";

@@ -147,13 +147,23 @@
         <!--Detail User View Controller-->
         <scene sceneID="utj-hP-TGu">
             <objects>
-                <viewController storyboardIdentifier="detailUserVC" id="EkA-RP-3a5" customClass="DetailUserViewController" customModule="AratechUsers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="detailUserVC" modalPresentationStyle="fullScreen" id="EkA-RP-3a5" customClass="DetailUserViewController" customModule="AratechUsers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iNA-f6-EQW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HvH-bj-wSq">
+                                <rect key="frame" x="364" y="20" width="30" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionDismissScreen:" destination="EkA-RP-3a5" eventType="touchUpInside" id="at1-qK-j0x"/>
+                                </connections>
+                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6jC-Jj-nZw">
-                                <rect key="frame" x="20" y="30" width="374" height="20.333333333333329"/>
+                                <rect key="frame" x="20" y="79" width="374" height="20.333333333333329"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USUARIO: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8q-sL-BNY">
                                         <rect key="frame" x="143.66666666666666" y="0.0" width="86.666666666666657" height="20.333333333333332"/>
@@ -164,7 +174,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="H6b-yW-qXd">
-                                <rect key="frame" x="20" y="70.333333333333329" width="374" height="153.66666666666669"/>
+                                <rect key="frame" x="20" y="119.33333333333333" width="374" height="153.66666666666669"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="waa-sP-YXN">
                                         <rect key="frame" x="0.0" y="0.0" width="45" height="20.333333333333332"/>
@@ -173,7 +183,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aLN-bg-sh1">
-                                        <rect key="frame" x="0.0" y="35.333333333333343" width="374" height="34"/>
+                                        <rect key="frame" x="0.0" y="35.333333333333329" width="374" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -197,7 +207,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eFW-Kj-goP">
-                                <rect key="frame" x="20" y="244" width="374" height="68"/>
+                                <rect key="frame" x="20" y="293" width="374" height="68"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hq9-9n-LgN">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
@@ -230,12 +240,14 @@
                         <constraints>
                             <constraint firstItem="6jC-Jj-nZw" firstAttribute="leading" secondItem="wAE-h7-o5p" secondAttribute="leading" constant="20" id="9a5-jm-RMQ"/>
                             <constraint firstItem="wAE-h7-o5p" firstAttribute="trailing" secondItem="6jC-Jj-nZw" secondAttribute="trailing" constant="20" id="Dea-pw-6yX"/>
-                            <constraint firstItem="6jC-Jj-nZw" firstAttribute="top" secondItem="wAE-h7-o5p" secondAttribute="top" constant="30" id="Kcj-hK-SzU"/>
+                            <constraint firstItem="HvH-bj-wSq" firstAttribute="top" secondItem="wAE-h7-o5p" secondAttribute="top" constant="20" id="NA4-Fo-vep"/>
                             <constraint firstItem="H6b-yW-qXd" firstAttribute="top" secondItem="6jC-Jj-nZw" secondAttribute="bottom" constant="20" id="Wh5-m7-eTH"/>
                             <constraint firstItem="eFW-Kj-goP" firstAttribute="leading" secondItem="wAE-h7-o5p" secondAttribute="leading" constant="20" id="Z28-VB-RgS"/>
                             <constraint firstItem="H6b-yW-qXd" firstAttribute="leading" secondItem="wAE-h7-o5p" secondAttribute="leading" constant="20" id="bga-ZR-Idi"/>
+                            <constraint firstItem="wAE-h7-o5p" firstAttribute="trailing" secondItem="HvH-bj-wSq" secondAttribute="trailing" constant="20" id="hJo-75-uN9"/>
                             <constraint firstItem="wAE-h7-o5p" firstAttribute="trailing" secondItem="eFW-Kj-goP" secondAttribute="trailing" constant="20" id="omn-VW-fp4"/>
                             <constraint firstItem="wAE-h7-o5p" firstAttribute="trailing" secondItem="H6b-yW-qXd" secondAttribute="trailing" constant="20" id="onf-Sb-SMd"/>
+                            <constraint firstItem="6jC-Jj-nZw" firstAttribute="top" secondItem="HvH-bj-wSq" secondAttribute="bottom" constant="20" id="sT1-Ds-bkV"/>
                             <constraint firstItem="eFW-Kj-goP" firstAttribute="top" secondItem="H6b-yW-qXd" secondAttribute="bottom" constant="20" id="zJq-zk-JR7"/>
                         </constraints>
                     </view>
@@ -346,6 +358,9 @@
     </scenes>
     <resources>
         <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

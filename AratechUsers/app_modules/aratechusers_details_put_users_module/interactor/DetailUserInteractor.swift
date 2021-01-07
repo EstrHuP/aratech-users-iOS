@@ -35,7 +35,7 @@ class DetailUserInteractor: PresenterToInteractorDetailUserProtocol {
         }}
     }
     
-    func fetchPutDetailUser(id: String) {
+    func fetchPutDetailUser(id: String, object: User) {
         FunctionConstants.shared.logMessage(message: "DetailUserInteractor - fetchPutDetailUser")
         
         let url : String = ServicesConstants.shared.url_base + "/" + id
@@ -43,6 +43,8 @@ class DetailUserInteractor: PresenterToInteractorDetailUserProtocol {
         request.httpMethod = "PUT"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.setValue("application/json", forHTTPHeaderField: "Accept")
+        
+        request.httpBody = try! JSONEncoder().encode(object)
         
         AF.request(request).responseJSON{ (response) in switch response.result {
         case.success(let JSON):

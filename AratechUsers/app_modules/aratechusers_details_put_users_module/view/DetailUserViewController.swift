@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SPAlert
 
 class DetailUserViewController: UIViewController {
     
@@ -43,13 +44,17 @@ class DetailUserViewController: UIViewController {
     }
     
     //MARK: IBActions
+    @IBAction func actionDismissScreen(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     //Edit button: change design
     @IBAction func actionEdit(_ sender: Any) {
         self.isPressedEditBtn = true
         self.funcionalityBoolEditBtn()
         if self.count == 2 {
             count = 0
-            self.presenter?.putDetailUser(id: idPressed)
+            self.presenter?.putDetailUser(id: idPressed, object: User(id: "", name: self.ui_name_textfield.text!, birthdate: self.ui_birthdate_textfield.text!))
             self.isPressedEditBtn = false
             self.funcionalityBoolEditBtn()
         }
@@ -57,11 +62,15 @@ class DetailUserViewController: UIViewController {
     
     //Cancel button: show alert
     @IBAction func actionCancel(_ sender: Any) {
+        self.count += 1
         let refreshAlert = UIAlertController(title: NSLocalizedString("Cancel_alert_title", comment: ""), message: NSLocalizedString("Cancel_alert_body", comment: ""), preferredStyle: UIAlertController.Style.alert)
 
         refreshAlert.addAction(UIAlertAction(title: NSLocalizedString("Cancel_alert_yes", comment: ""), style: .default, handler: { (action: UIAlertAction!) in
-            self.isPressedEditBtn = false
-            self.funcionalityBoolEditBtn()
+            if self.count == 3 {
+                self.count = 0
+                self.isPressedEditBtn = false
+                self.funcionalityBoolEditBtn()
+            }
         }))
 
         refreshAlert.addAction(UIAlertAction(title: NSLocalizedString("Cancel_alert_no", comment: ""), style: .cancel, handler: { (action: UIAlertAction!) in
@@ -75,7 +84,6 @@ class DetailUserViewController: UIViewController {
     func prepareData(id: String) {
         presenter?.getDetailUser(id: id)
         idPressed = id
-        print("tengo id \(id)")
     }
     
     func localizabled() {
@@ -206,6 +214,7 @@ extension DetailUserViewController : PresenterToViewDetailUserProtocol {
     //MARK: Put detail to user
     func putDetailUserSuccess(putData: User) {
         FunctionConstants.shared.logMessage(message: "DetailUserViewController - putDetailUserSuccess")
+        SPAlert.present(message: NSLocalizedString("Alert_body_save", comment: ""), haptic: .success)
     }
     
     func putDetailUserError() {

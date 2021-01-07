@@ -24,7 +24,7 @@ protocol InteractorToPresenterDetailUserProtocol: class {
 protocol PresenterToInteractorDetailUserProtocol: class {
     var presenter: InteractorToPresenterDetailUserProtocol? {get set}
     func fetchDetailUser(id: String)
-    func fetchPutDetailUser(id: String)
+    func fetchPutDetailUser(id:String, object: User)
 }
 
 protocol ViewToPresenterDetailUserProtocol: class {
@@ -33,7 +33,7 @@ protocol ViewToPresenterDetailUserProtocol: class {
     var router: PresenterToRouterDetailUserProtocol? {get set}
     
     func getDetailUser(id: String)
-    func putDetailUser(id: String)
+    func putDetailUser(id: String, object: User)
 }
 
 protocol PresenterToRouterDetailUserProtocol: class {
