@@ -99,7 +99,7 @@ class DetailUserViewController: UIViewController {
     
     func showData() {
         //paint data
-        if dataUser.name != "" {
+        if dataUser?.name != "" {
             self.ui_title_label.text = NSLocalizedString("Show_user_title", comment: "") + dataUser.name
         }else {
             self.ui_title_label.text = ""
@@ -126,7 +126,9 @@ class DetailUserViewController: UIViewController {
         self.ui_birthdate_textfield.isEnabled = false
         self.ui_cancel_btn.isHidden = true
         //change title btn
-        self.ui_title_label.text = NSLocalizedString("Show_user_title", comment: "")
+        if dataUser?.name != nil {
+            self.ui_title_label.text = NSLocalizedString("Show_user_title", comment: "") + dataUser.name
+        }
         self.ui_edit_btn.setTitle(NSLocalizedString("Edit_title_btn", comment: ""), for: .normal)
     }
     
